@@ -108,7 +108,7 @@
 <section class="flex min-h-screen md:h-screen">
     <div class="grow-0 bg-indigo-600 md:w-1/5 flex flex-col justify-between p-6 sticky bottom-0 top-0 left-0">
         <div class="flex flex-col gap-8">
-            <p class="text-2xl font-black text-zinc-100">Madat Ota Choyxonasi</p>
+            <p class="text-2xl font-black text-zinc-100">Cafe Name</p>
         <div class="flex flex-col gap-1">
             <button on:click={() => { navigate('/admin')}} class="flex items-center gap-3 hover:bg-indigo-500 text-zinc-100 p-3 rounded-md">
                 <i class="bi bi-house-fill text-lg"></i>
