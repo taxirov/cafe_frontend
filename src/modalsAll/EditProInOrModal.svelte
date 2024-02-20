@@ -37,16 +37,11 @@
 
     async function deleteProduct() {
         try {
-            const res = await proInOrEndpoint.delete(productInOrder.id, token)
-            const orders: Order[] = res.data.orders
-            orderStore.set(orders)
-            close()
+            await proInOrEndpoint.delete(productInOrder.id, token)
+            location.reload()
         } catch(error) {
             if (error.response.status == 404) {
-                const res = await orderEndpoint.getTrueStatus(1, 1, token)
-                const orders: Order[] = res.data.orders
-                orderStore.set(orders)
-                close()
+                location.reload()
             }
         }
     }
