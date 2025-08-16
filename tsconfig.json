@@ -3,7 +3,9 @@
   "include": ["src/**/*"],
   "exclude": ["node_modules/*", "__sapper__/*", "public/*"],
   "compilerOptions": {
-    "ignoreDeprecations": "5.0"
+    "ignoreDeprecations": "5.0",
+    "importsNotUsedAsValues": "remove",
+    "preserveValueImports": false
   },
   "importsNotUsedAsValues": "error",
   "verbatimModuleSyntax": true
