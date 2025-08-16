@@ -1,7 +1,7 @@
 import axios from "axios";
 import type { Book } from "./store";
 
-const url = "https://cafe.webpack.uz/api"
+const url = "http://localhost:4800/api"
 
 
 export class RoleEndpoint {
